@@ -84,8 +84,8 @@ fetch(api)
 .then(res => res.json())
 .then(data => {
 
-  const total = parseInt(data[0].B);
-  const used = parseInt(data[1].B);
+  const total = parseInt(data[0].total);
+  const used = parseInt(data[1].used);
 
   const remain = total - used;
 
